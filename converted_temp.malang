@@ -1,0 +1,16 @@
+ezhuthi "ഒരു സംഖ്യ നൽകുക:"
+vaayikkuka x
+
+sathyamenkil x > 0 {
+    ezhuthi "സൂചിക ചെറുതാണ്"
+}
+kalamenkil {
+    ezhuthi "സൂചിക വലിയതാണ് അല്ലെങ്കിൽ പൂജ്യം"
+}
+
+poornnasankhya i = 1
+
+ethrakaalam i <= x {
+    ezhuthi i
+    poornnasankhya i = i + 1
+}

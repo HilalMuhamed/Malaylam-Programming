@@ -1,0 +1,23 @@
+program ::= { statement }
+
+statement ::=
+      "ezhuthi" ( expression | string ) nl
+    | "sathyamenkil" comparison "{" { statement } "}" [ "kalamenkil" "{" { statement } "}" ] nl
+    | "ethrakaalam" comparison "{" { statement } "}" nl
+    | type identifier "=" expression nl
+    | "vaayika" identifier nl
+
+type ::= "poornnasankhya" | "dashamsham" | "sathyam" | "vaachakam"
+
+comparison ::= expression ( "==" | "!=" | ">" | ">=" | "<" | "<=" ) expression
+              { ( "==" | "!=" | ">" | ">=" | "<" | "<=" ) expression }
+
+expression ::= term { ("+" | "-") term }
+
+term ::= unary { ("*" | "/") unary }
+
+unary ::= ["+" | "-"] primary
+
+primary ::= number | identifier
+
+nl ::= '\n'+

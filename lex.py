@@ -146,7 +146,8 @@ class TokenType(enum.Enum):
     FLOAT = 110
     BOOL = 111
     STR = 112
-
+    ELSE = 114
+    
     # Operators (200+)
     EQ = 201
     PLUS = 202
@@ -161,37 +162,57 @@ class TokenType(enum.Enum):
     GTEQ = 211
     LBRACE = 212
     RBRACE = 213
-
 keyword_map = {
+    # PRINT
     "PRINT": TokenType.PRINT,
-    "അച്ചടി": TokenType.PRINT,
-    "achadi": TokenType.PRINT,
-
+    "എഴുതി": TokenType.PRINT,
+    "ezhuthi": TokenType.PRINT,
+    
+    # INPUT
     "INPUT": TokenType.INPUT,
-    "ഇൻപുട്ട്": TokenType.INPUT,
-    "input": TokenType.INPUT,
+    "വായിക്കുക": TokenType.INPUT,
+    "vaayikkuka": TokenType.INPUT,
+    "വായിക": TokenType.INPUT,
+    "vaayika": TokenType.INPUT,
 
+    # IF
     "IF": TokenType.IF,
-    "എങ്കിൽ": TokenType.IF,
-    "enkil": TokenType.IF,
+    "സത്യമെങ്കിൽ": TokenType.IF,
+    "sathyamenkil": TokenType.IF,
 
+    #ELSE
+    
+    "ELSE": TokenType.ELSE,
+    "കലമെങ്കിൽ": TokenType.ELSE,
+    "kalamenkil": TokenType.ELSE,
+
+    # WHILE
     "WHILE": TokenType.WHILE,
     "എത്രകാലം": TokenType.WHILE,
-    "ethra": TokenType.WHILE,
+    "ethrakaalam": TokenType.WHILE,
 
+
+    # INT
     "INT": TokenType.INT,
     "പൂർണ്ണസംഖ്യ": TokenType.INT,
-    "poornnasamkhya": TokenType.INT,
+    "poornnasankhya": TokenType.INT,
 
+    # FLOAT
     "FLOAT": TokenType.FLOAT,
     "ദശാംശം": TokenType.FLOAT,
     "dashamsham": TokenType.FLOAT,
 
+    # BOOL
     "BOOL": TokenType.BOOL,
-    "ബൂൾ": TokenType.BOOL,
-    "bool": TokenType.BOOL,
+    "സത്യമായ": TokenType.BOOL,
+    "sathyamaaya": TokenType.BOOL,
+    "സത്യം": TokenType.BOOL,
+    "sathyam": TokenType.BOOL,
 
+    # STRING
     "STR": TokenType.STR,
-    "സ്ട്രിംഗ്": TokenType.STR,
-    "string": TokenType.STR,
+    "വാചകം": TokenType.STR,
+    "vaachakam": TokenType.STR,
+    
+    
 }
