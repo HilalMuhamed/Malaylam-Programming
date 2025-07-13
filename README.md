@@ -42,3 +42,16 @@ The goal is to make programming feel more accessible and native by allowing deve
 - **Regular Expressions** – Token parsing and identifier matching
 - **indic-transliteration** – Converts Malayalam identifiers to Manglish for valid C naming
 - **GCC** – Used to compile the final generated `.c` file
+### 📘 Language Syntax Reference
+
+| Malayalam     | Manglish         | Meaning (C Equivalent) |
+| ------------- | ---------------- | ---------------------- |
+| `എഴുതി`       | `ezhuthi`        | `PRINT` (output)       |
+| `വായിക്കുക`   | `vaayikkuka`     | `INPUT` (user input)   |
+| `സത്യമെങ്കിൽ` | `sathyamenkil`   | `IF` (condition)       |
+| `കലമെങ്കിൽ`   | `kalamenkil`     | `ELSE` (alternative)   |
+| `എത്രകാലം`    | `ethrakaalam`    | `WHILE` (loop)         |
+| `പൂർണ്ണസംഖ്യ` | `poornnasankhya` | `INT` (integer type)   |
+| `ദശാംശം`      | `dashamsham`     | `FLOAT` (float type)   |
+| `വാചകം`       | `vaachakam`      | `STR` (string type)    |
+| `സത്യം`       | `sathyam`        | `BOOL` (boolean type)  |
