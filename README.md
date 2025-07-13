@@ -76,7 +76,7 @@ The goal is to make programming feel more accessible and native by allowing deve
 
 ```
 
-### 🧾 Sample Program (Manglish Syntax)
+### 📝 Sample Program (Manglish Syntax)
 
 ```
 ezhuthi "How many Fibonacci numbers?"
