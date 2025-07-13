@@ -56,7 +56,7 @@ The goal is to make programming feel more accessible and native by allowing deve
 | `വാചകം`       | `vaachakam`      | `STR` (string type)    |
 | `സത്യം`       | `sathyam`        | `BOOL` (boolean type)  |
 
-🧾 Sample Program (Malayalam Syntax)
+### 🧾 Sample Program (Malayalam Syntax)
 
 ```
 എഴുതി "എത്ര ഫിബോണാച്ചി സംഖ്യകൾ വേണം?"
@@ -76,6 +76,8 @@ The goal is to make programming feel more accessible and native by allowing deve
 
 ```
 
+### 🧾 Sample Program (Manglish Syntax)
+
 ```
 ezhuthi "How many Fibonacci numbers?"
 vaayikkuka n
@@ -94,7 +96,7 @@ ethrakaalam n > 0 {
 
 ```
 
-🧪 Sample C Code 
+### 🧪 Sample C Code 
 
 ```
 #include <stdio.h>
