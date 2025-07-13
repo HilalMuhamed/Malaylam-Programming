@@ -55,3 +55,11 @@ The goal is to make programming feel more accessible and native by allowing deve
 | `ദശാംശം`      | `dashamsham`     | `FLOAT` (float type)   |
 | `വാചകം`       | `vaachakam`      | `STR` (string type)    |
 | `സത്യം`       | `sathyam`        | `BOOL` (boolean type)  |
+
+🧾 Sample Program (Malayalam Syntax)
+
+<img width="1110" height="862" alt="image" src="https://github.com/user-attachments/assets/63cc5343-67e3-46b2-b007-d62403a53053" />
+<img width="880" height="862" alt="image" src="https://github.com/user-attachments/assets/5f4c0557-b638-4a8b-be96-4a1854f7ef97" />
+
+🧪 Sample C Code 
+<img width="986" height="1280" alt="image" src="https://github.com/user-attachments/assets/43de43c8-599f-4de8-962d-13626da7400a" />
