@@ -58,8 +58,65 @@ The goal is to make programming feel more accessible and native by allowing deve
 
 🧾 Sample Program (Malayalam Syntax)
 
-<img width="1110" height="862" alt="image" src="https://github.com/user-attachments/assets/63cc5343-67e3-46b2-b007-d62403a53053" />
-<img width="880" height="862" alt="image" src="https://github.com/user-attachments/assets/5f4c0557-b638-4a8b-be96-4a1854f7ef97" />
+```
+എഴുതി "എത്ര ഫിബോണാച്ചി സംഖ്യകൾ വേണം?"
+വായിക്കുക എണ്ണം
+എഴുതി ""
+
+പൂർണ്ണസംഖ്യ ക = 0
+പൂർണ്ണസംഖ്യ ഖ = 1
+
+എത്രകാലം എണ്ണം > 0 {
+    എഴുതി ക
+    പൂർണ്ണസംഖ്യ ഗ = ക + ഖ
+    പൂർണ്ണസംഖ്യ ക = ഖ
+    പൂർണ്ണസംഖ്യ ഖ = ഗ
+    പൂർണ്ണസംഖ്യ എണ്ണം = എണ്ണം - 1
+}
+
+```
+
+```
+ezhuthi "How many Fibonacci numbers?"
+vaayikkuka n
+ezhuthi ""
+
+poornnasankhya a = 0
+poornnasankhya b = 1
+
+ethrakaalam n > 0 {
+    ezhuthi a
+    poornnasankhya c = a + b
+    poornnasankhya a = b
+    poornnasankhya b = c
+    poornnasankhya n = n - 1
+}
+
+```
 
 🧪 Sample C Code 
-<img width="986" height="1280" alt="image" src="https://github.com/user-attachments/assets/43de43c8-599f-4de8-962d-13626da7400a" />
+
+```
+#include <stdio.h>
+int main() {
+    float n;
+    int a, b, c;
+
+    printf("How many Fibonacci numbers?\n");
+    scanf("%d",&n)
+    printf("\n");
+
+    a = 0;
+    b = 1;
+
+    while (n > 0) {
+        printf("%.2f\n", (float)a);
+        c = a + b;
+        a = b;
+        b = c;
+        n = n - 1;
+    }
+    return 0;
+}
+
+```
