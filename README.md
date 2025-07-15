@@ -108,7 +108,7 @@ int main() {
     int a, b, c;
 
     printf("How many Fibonacci numbers?\n");
-    scanf("%d",&n)
+    scanf("%f",&n);
     printf("\n");
 
     a = 0;
