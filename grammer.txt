@@ -7,6 +7,9 @@ statement ::=
     | type identifier "=" expression nl
     | "vaayika" identifier nl
 
+    | "joli" identifier "(" [ identifier { "," identifier } ] ")" "{" { statement } "}" nl
+    | identifier "(" [ expression { "," expression } ] ")" nl
+
 type ::= "poornnasankhya" | "dashamsham" | "sathyam" | "vaachakam"
 
 comparison ::= expression ( "==" | "!=" | ">" | ">=" | "<" | "<=" ) expression

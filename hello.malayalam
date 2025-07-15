@@ -1,16 +1,16 @@
-എഴുതി "ഒരു സംഖ്യ നൽകുക:"
-വായിക്കുക x
+vaayika num
 
-സത്യമെങ്കിൽ x > 0 {
-    എഴുതി "സൂചിക ചെറുതാണ്"
+joli checkNumber(x) {
+    sathyamenkil x < 0 {
+        ezhuthi "This is a negative number"
+    } kalamenkil {
+        ezhuthi "This is zero or a positive number"
+    }
 }
-കലമെങ്കിൽ {
-    എഴുതി "സൂചിക വലിയതാണ് അല്ലെങ്കിൽ പൂജ്യം"
-}
 
-പൂർണ്ണസംഖ്യ i = 1
+poornnasankhya i = -3
 
-എത്രകാലം i <= x {
-    എഴുതി i
-    പൂർണ്ണസംഖ്യ i = i + 1
+ethrakaalam i <= num {
+    checkNumber(i)
+    i = i + 1
 }

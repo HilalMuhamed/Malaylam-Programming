@@ -1,20 +1,21 @@
 #include<stdio.h>
 int main(){
-float x;
+float num;
 int i;
-printf("ഒരു സംഖ്യ നൽകുക:\n");
-if(0 == scanf("%f", &x)) {
-x = 0;
+if(0 == scanf("%f", &num)) {
+num = 0;
 scanf("%*s");
 }
-if(x>0){
-printf("സൂചിക ചെറുതാണ്\n");
+void checkNumber(float x) {
+if(x<0){
+printf("This is a negative number\n");
 } else {
-printf("സൂചിക വലിയതാണ് അല്ലെങ്കിൽ പൂജ്യം\n");
+printf("This is zero or a positive number\n");
 }
-i = 1;
-while(i<=x){
-printf("%.2f\n", (float)(i));
+}
+i = -3;
+while(i<=num){
+checkNumber(i);
 i = i+1;
 }
 return 0;

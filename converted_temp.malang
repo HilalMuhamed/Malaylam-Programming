@@ -1,16 +1,16 @@
-ezhuthi "ഒരു സംഖ്യ നൽകുക:"
-vaayikkuka x
+vaayika num
 
-sathyamenkil x > 0 {
-    ezhuthi "സൂചിക ചെറുതാണ്"
+joli checkNumber(x) {
+    sathyamenkil x < 0 {
+        ezhuthi "This is a negative number"
+    } kalamenkil {
+        ezhuthi "This is zero or a positive number"
+    }
 }
-kalamenkil {
-    ezhuthi "സൂചിക വലിയതാണ് അല്ലെങ്കിൽ പൂജ്യം"
-}
 
-poornnasankhya i = 1
+poornnasankhya i = -3
 
-ethrakaalam i <= x {
-    ezhuthi i
-    poornnasankhya i = i + 1
+ethrakaalam i <= num {
+    checkNumber(i)
+    i = i + 1
 }

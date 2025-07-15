@@ -32,7 +32,7 @@ class Lexer:
     def skipComment(s):
         
         if s.curChar == "#":
-            while s.curChar != "\n":
+            while s.curChar != "\n" and s.curChar != "\0":
                 s.nextChar()
     
     def getToken(s):
@@ -52,6 +52,13 @@ class Lexer:
             token = Token(s.curChar, TokenType.NEWLINE)
         elif s.curChar =='\0':
             token = Token("", TokenType.EOF)
+        elif s.curChar == ',':
+            token = Token(s.curChar, TokenType.COMMA)
+        elif s.curChar == '(':
+            token = Token(s.curChar, TokenType.LPAREN)
+        elif s.curChar == ')':
+            token = Token(s.curChar, TokenType.RPAREN)
+
         elif s.curChar == '=':
             if s.peek() == '=':
                 lastChar = s.curChar
@@ -147,6 +154,7 @@ class TokenType(enum.Enum):
     BOOL = 111
     STR = 112
     ELSE = 114
+    FUNCTION = 115
     
     # Operators (200+)
     EQ = 201
@@ -162,6 +170,10 @@ class TokenType(enum.Enum):
     GTEQ = 211
     LBRACE = 212
     RBRACE = 213
+    COMMA = 214
+    LPAREN = 215
+    RPAREN = 216
+    
 keyword_map = {
     # PRINT
     "PRINT": TokenType.PRINT,
@@ -214,5 +226,9 @@ keyword_map = {
     "വാചകം": TokenType.STR,
     "vaachakam": TokenType.STR,
     
-    
+    "FUNCTION": TokenType.FUNCTION,
+    "ജോലി": TokenType.FUNCTION,
+    "joli": TokenType.FUNCTION,
+    "pravarthanam": TokenType.FUNCTION,
+    "പ്രവർത്തനം": TokenType.FUNCTION,
 }
