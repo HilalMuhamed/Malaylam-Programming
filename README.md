@@ -44,17 +44,20 @@ The goal is to make programming feel more accessible and native by allowing deve
 - **GCC** – Used to compile the final generated `.c` file
 ### 📘 Language Syntax Reference
 
-| Malayalam     | Manglish         | Meaning (C Equivalent) |
-| ------------- | ---------------- | ---------------------- |
-| `എഴുതി`       | `ezhuthi`        | `PRINT` (output)       |
-| `വായിക്കുക`   | `vaayikkuka`     | `INPUT` (user input)   |
-| `സത്യമെങ്കിൽ` | `sathyamenkil`   | `IF` (condition)       |
-| `കലമെങ്കിൽ`   | `kalamenkil`     | `ELSE` (alternative)   |
-| `എത്രകാലം`    | `ethrakaalam`    | `WHILE` (loop)         |
-| `പൂർണ്ണസംഖ്യ` | `poornnasankhya` | `INT` (integer type)   |
-| `ദശാംശം`      | `dashamsham`     | `FLOAT` (float type)   |
-| `വാചകം`       | `vaachakam`      | `STR` (string type)    |
-| `സത്യം`       | `sathyam`        | `BOOL` (boolean type)  |
+| Malayalam     | Manglish         | English Version  or C Equivalent | Syntax Example                      |
+| ------------- | ---------------- | ---------------------- | ----------------------------------- |
+| `എഴുതി`       | `ezhuthi`        | `PRINT` (output)       | `എഴുതി "ഹലോ ലോകം"`             |
+| `വായിക്കുക`   | `vaayikkuka`     | `INPUT` (user input)   | `വായിക്കുക x`                         |
+| `സത്യമെങ്കിൽ` | `sathyamenkil`   | `IF` (condition)       | `സത്യമെങ്കിൽ x > 0 { ... }`        |
+| `കലമെങ്കിൽ`   | `kalamenkil`     | `ELSE` (alternative)   |`കലമെങ്കിൽ { ... }`                |
+| `എത്രകാലം`    | `ethrakaalam`    | `WHILE` (loop)         | `എത്രകാലം i < 10 { ... }`        |
+| `പൂർണ്ണസംഖ്യ` | `poornnasankhya` | `INT` (integer type)   | `പൂർണ്ണസംഖ്യ i = 5`              |
+| `ദശാംശം`      | `dashamsham`     | `FLOAT` (float type)   | `ദശാംശം pi = 3.14`              |
+| `വാചകം`       | `vaachakam`      | `STR` (string type)    |`വാചകം msg = "ഹലോ"`           |
+| `സത്യം`       | `sathyam`        | `BOOL` (boolean type)  |`സത്യം valid = 1`                 |
+| `ജോലി`        | `joli`           | `FUNCTION` (function ) |`ജോലി greet(age) { ezhuthi age }` |
+
+
 
 ### 🧾 Sample Program (Malayalam Syntax)
 
@@ -120,5 +123,5 @@ int main() {
     }
     return 0;
 }
-
 ```
+
